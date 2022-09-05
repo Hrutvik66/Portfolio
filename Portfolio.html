@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hrutvik</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&family=Fira+Code:wght@400;500&family=Inter:wght@400;500&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <body>
+    <div class="navbar">
+      <a href="#"><i data-feather="radio" class="logo"></i></a>
+      <ul class="nav-items">
+        <li>
+          <a href="#Home">Home</a>
+        </li>
+        <li>
+          <a href="#About">About</a>
+        </li>
+        <li>
+          <a href="#">Projects</a>
+        </li>
+        <li>
+          <a href="#Contact">Contact</a>
+        </li>
+        <li>
+          <button>Resume</button>
+        </li>
+      </ul>
+    </div>
+    <div class="links">
+      <ul class="link-items">
+        <li>
+          <a href="#"><i data-feather="github"></i></a>
+        </li>
+        <li>
+          <a href="#"><i data-feather="linkedin"></i></a>
+        </li>
+        <li>
+          <a href="#"><i data-feather="instagram"></i></a>
+        </li>
+        <li>
+          <a href="#"><i data-feather="facebook"></i></a>
+        </li>
+        <li style="display: flex; justify-content: center">
+          <hr
+            style="
+              width: 4px;
+              outline: none;
+              border-width: 0;
+              height: 8rem;
+              border-style: solid;
+              background-color: #ccd6f6;
+            "
+          />
+        </li>
+      </ul>
+    </div>
+    <section id="Home">
+      <div>
+        <h1>Hrutvik Malshikare</h1>
+        <p>
+          I am
+          <h2 class="typewrite" data-period="2000" data-type='[ "Website Developer","Application Developer","Develpment Tech Enthusiast" ]'>
+              <span class="wrap"></span>
+            </h2>
+        </p>
+        <button class="contact_btn">Contact Me!</button>
+      </div>
+      <div>
+        <img src="./heroImage.svg" class="HeroImage" />
+      </div>
+    </section>
+    <section id="About">
+      <div class="Heading">
+        <h1>About Me</h1>
+        <hr
+          style="
+            flex: 1;
+            height: 1px;
+            margin-left: 1rem;
+            border-style: solid;
+            background-color: #ccd6f6;
+            outline: none;
+          "
+        />
+      </div>
+      <div class="Data">
+        <div class="Info">
+          <p style="display: flex">
+            Hello! My name is Hrutvik and I am a Developer. I like to learn
+            things related to Development. <br /><br />I started learning HTML
+            and CSS first and now I am MERN Developer. Because of Development
+            Enthusiasm now I am Learning Flutter Application Development. My
+            main focus these days is learning new things related to Website and
+            Application Development. <br /><br />
+            Here are a few technologies I know About:
+          </p>
+          <div class="list-h">
+            <div class="list-v-2">
+              <div class="list-items">
+                <i data-feather="corner-down-right" class="arrow-icon"></i>
+                <p>Nextjs</p>
+              </div>
+              <div class="list-items">
+                <i data-feather="corner-down-right" class="arrow-icon"></i>
+                <p>MongoDB</p>
+              </div>
+              <div class="list-items">
+                <i data-feather="corner-down-right" class="arrow-icon"></i>
+                <p>Javascript</p>
+              </div>
+            </div>
+            <div class="list-v-2">
+              <div class="list-items">
+                <i data-feather="corner-down-right" class="arrow-icon"></i>
+                <p>Reactjs</p>
+              </div>
+              <div class="list-items">
+                <i data-feather="corner-down-right" class="arrow-icon"></i>
+                <p>Tailwind CSS</p>
+              </div>
+              <div class="list-items">
+                <i data-feather="corner-down-right" class="arrow-icon"></i>
+                <p>Firebase</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="image">
+          <img src="./Hrutvik.jpg" alt="Hrutvik" />
+        </div>
+      </div>
+    </section>
+    <section id="Contact">
+      <div class="Contact-heading">
+        <h1>Contact Me</h1>
+        <hr
+          style="
+            flex: 1;
+            height: 1px;
+            margin-left: 1rem;
+            border-style: solid;
+            background-color: #ccd6f6;
+            outline: none;
+          "
+        />
+      </div>
+      <div class="Contact-data">
+        <div class="Contact-info">
+          <h1 style="margin-bottom: 1rem">Get In Touch</h1>
+          <p>
+            I'm currently looking for any new opportunities, my
+            inbox is always open. Whether you have a question or just want to
+            say hi, I'll try my best to get back to you!
+          </p>
+        </div>
+        <center>
+          <div class="form">
+            <!-- <form> -->
+            <div class="inputs">
+              <input type="text" placeholder="Name" />
+              <input type="email" placeholder="Email" />
+            </div>
+            <input type="text" placeholder="Subject" />
+            <textarea placeholder="Message" rows="5"></textarea>
+            <button class="send">Send Message</button>
+            <!-- </form> -->
+          </div>
+          
+        </center>
+      </div>
+    </section>
+    <script>
+      feather.replace();
+    </script>
+    <script src="./index.js"></script>
+  </body>
+</html>
