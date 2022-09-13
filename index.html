@@ -26,7 +26,7 @@
           <a href="#About">About</a>
         </li>
         <li>
-          <a href="#">Projects</a>
+          <a href="#Project">Projects</a>
         </li>
         <li>
           <a href="#Contact">Contact</a>
@@ -73,7 +73,7 @@
               <span class="wrap"></span>
             </h2>
         </p>
-        <button class="contact_btn">Contact Me!</button>
+        <a href="#Contact"><button class="contact_btn">Contact Me!</button></a>
       </div>
       <div>
         <img src="./heroImage.svg" class="HeroImage" />
@@ -140,6 +140,67 @@
         </div>
       </div>
     </section>
+    <section id="Project">
+      <div class="Project-heading">
+        <h1>Projects</h1>
+        <hr
+          style="
+            flex: 1;
+            height: 1px;
+            margin-left: 1rem;
+            border-style: solid;
+            background-color: #ccd6f6;
+            outline: none;
+          "
+        />
+      </div>
+      <div class="project-list">
+        <div class="project">
+          <div class="project-image">
+            <img class="project-img" src="./Next-web.png" alt="project1" />
+          </div>
+          <div class="project-info">
+            <h1>E-commerce</h1>
+            <p>
+              This is an E-commerce website made using Nextjs, Tailwind CSS and Firebase. 
+            </p>
+            <div class="project-links">
+              <button><i data-feather="link"></i></button>
+              <button><i data-feather="code"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <div class="project-image">
+            <img class="project-img" src="./Chat-web.png" alt="project2" />
+          </div>
+          <div class="project-info">
+            <h1>Chat Application</h1>
+            <p>
+              This is a chat application made using Nextjs, Tailwind and Firebase.
+            </p>
+            <div class="project-links">
+              <button><i data-feather="link"></i></button>
+              <button><i data-feather="code"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <div class="project-image">
+            <img class="project-img" src="./React-web.png" alt="project3" />
+          </div>
+          <div class="project-info">
+            <h1>E-commerce</h1>
+            <p>
+              This is an E-commerce website made using MERN components.
+            </p>
+            <div class="project-links">
+              <button><i data-feather="link"></i></button>
+              <button><i data-feather="code"></i></button>
+            </div>
+      </div>
+    </div>
+  </section>
     <section id="Contact">
       <div class="Contact-heading">
         <h1>Contact Me</h1>
@@ -158,9 +219,9 @@
         <div class="Contact-info">
           <h1 style="margin-bottom: 1rem">Get In Touch</h1>
           <p>
-            I'm currently looking for any new opportunities, my
-            inbox is always open. Whether you have a question or just want to
-            say hi, I'll try my best to get back to you!
+            I'm currently looking for any new opportunities, my inbox is always
+            open. Whether you have a question or just want to say hi, I'll try
+            my best to get back to you!
           </p>
         </div>
         <center>
@@ -172,10 +233,9 @@
             </div>
             <input type="text" placeholder="Subject" />
             <textarea placeholder="Message" rows="5"></textarea>
-            <button class="send">Send Message</button>
+            <button class="send" onclick="sendEmail">Send Message</button>
             <!-- </form> -->
           </div>
-          
         </center>
       </div>
     </section>

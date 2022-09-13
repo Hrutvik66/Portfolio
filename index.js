@@ -1,4 +1,5 @@
-var TxtType = function(el, toRotate, period) {
+// Typewriter code
+var TxtType = function (el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
     this.loopNum = 0;
@@ -54,3 +55,19 @@ window.onload = function() {
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
     document.body.appendChild(css);
 };
+
+// Inview Java Script code
+const appear = document.querySelector('.appear'); 
+const cb = function(entries){
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add('inview');
+    }else{
+      entry.target.classList.remove('inview');
+    }
+  });
+}
+const io = new IntersectionObserver(cb);
+io.observe(appear);
+
+// Form validation
