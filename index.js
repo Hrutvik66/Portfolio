@@ -88,14 +88,17 @@ function sendEmail() {
   messageMessage.innerHTML = "";
   if (name.value == "") {
     nameMessage.innerHTML = "Please Enter name :(";
+    return;
   } else if (email.value == "") {
     emailMessage.innerHTML = "Please Enter email :(";
+    return;
   } else if (subject.value == "") {
     subjectMessage.innerHTML = "Please Enter subject of message :(";
+    return;
   } else if (message.value == "") {
     messageMessage.innerHTML = "Please Enter message :(";
+    return;
   }
-
   const re =
     /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
