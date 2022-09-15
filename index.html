@@ -228,12 +228,24 @@
           <div class="form">
             <!-- <form> -->
             <div class="inputs">
-              <input type="text" placeholder="Name" />
-              <input type="email" placeholder="Email" />
+              <div class="inputBox">
+                <input type="text" placeholder="Name" name = "Name" />
+                <span id = "nameMessage"></span>
+              </div>
+              <div class="inputBox">
+                <input type="email" placeholder="Email" name = "Email" />
+                <span id = "emailMessage"></span>
+              </div>
             </div>
-            <input type="text" placeholder="Subject" />
-            <textarea placeholder="Message" rows="5"></textarea>
-            <button class="send" onclick="sendEmail">Send Message</button>
+            <div class="inputBox">
+              <input type="text" placeholder="Subject" name = "Subject"/>
+              <span id = "subjectMessage"></span>
+            </div>
+            <div class="inputBox">
+              <textarea name="Message" placeholder="Message" rows="5"></textarea>
+              <span id = "messageMessage"></span>
+            </div>
+            <button class="send" onclick="sendEmail()">Send Message</button>
             <!-- </form> -->
           </div>
         </center>
